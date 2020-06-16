@@ -1,0 +1,6 @@
+num <- as.integer(readline(prompt = "Digite um número: "))
+if(num < 0){
+  print(NA)
+} else if(num >= 0){
+  print(paste("A raiz de", num, "é", sqrt(num)))
+}
