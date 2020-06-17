@@ -1,0 +1,9 @@
+#Criando um vetor de comprimento 3
+x <- as.integer(c(2,2,3))
+if(length(x) != 3){
+  print("O vetor deve ser de comprimento 3!")
+} else if(x[1] < x[2] & x[2] < x[3]){
+  print(TRUE)
+} else {
+  print(FALSE)
+}
