@@ -5,7 +5,5 @@ i <- 0
 for(i in 1: length(alfabeto)){
   if(alfabeto[i] == "a") {
     print(i)
-  } else {
-    i <- i+1
   }
 }
