@@ -1,0 +1,13 @@
+#Declarar uma variável de ordem aleatória
+n <- sample(1:10,1)
+i <- 0
+#Enquanto i for menor que 10 (que é o comprimento do vetor), deve-se adicionar uma unidade a ele.
+while(i < 10){
+  i <- i+1
+#Se i atingir o valor n, R deve pular para o próximo.
+ if(i == n){
+   next 
+ }
+ #Printar os valores de i que são diferentes de n
+ print(i)
+}
