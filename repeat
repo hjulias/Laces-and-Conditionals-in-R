@@ -1,0 +1,10 @@
+msg <- c("Hello")
+i <- 1
+#crie um comando repeat{} que termina quando i atinge o valor 12 e escreva a variável para todos os valores múltiplos de 3, ou seja, aqueles cujo resto da divisão é zero 
+repeat{
+  if(i%%3 == 0){
+    print(msg)
+  } 
+  i <- i + 1
+  if(i > 12) break()
+}
