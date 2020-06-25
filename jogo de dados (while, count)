@@ -1,0 +1,13 @@
+#n é uma variável que simula o lançamento de um dado.
+n <- sample(1:6,1)
+count <- 0
+#se três jogadas de dado resultarem em números ímpares iguais, os resultados devem ser printados
+while(count < 3){
+  count <- count + 1
+  if(n%%2 == 1){
+    print(n)
+#se não, é preciso rodar o script novamente.
+  } else {
+    print("Tente de novo")
+  }
+}
