@@ -1,0 +1,11 @@
+#Declarar uma variável com eordem aleatória
+alfabeto <- letters[sample(1:26,26)]
+i <- 0
+#em que posição está "a"?
+for(i in 1: length(alfabeto)){
+  if(alfabeto[i] == "a") {
+    print(i)
+  } else {
+    i <- i+1
+  }
+}
