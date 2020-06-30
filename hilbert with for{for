@@ -1,0 +1,8 @@
+#Crie uma matrix de Hilbert 5x5 com laços aninhados.
+v <- 5
+M <- matrix(nrow = v, ncol = v)
+for(i in 1:v){
+  for(j in 1:v)
+    M[i,j] = 1/(i+j-1)
+} 
+print(M)
