@@ -1,0 +1,10 @@
+#Usando o comando rbinom para simular o lançamento de uma moeda por 20 vezes, sendo cara = 1 e coroa = 0, armazene os resultados da simulação num vetor.
+moeda <- rbinom(1,1,0.5)
+vm <- vector("numeric")
+count <- 0
+while (count < 20){
+  moeda <- rbinom(1,1,0.5)
+  count <- count + 1
+  vm <- c(vm, moeda)
+}
+print(vm)
