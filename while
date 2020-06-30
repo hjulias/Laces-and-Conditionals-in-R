@@ -4,3 +4,28 @@ while (x <= 1) {
   x <- rnorm(1)
   print(x)
 }
+
+#Adapte o script anterior para não imprimir os números negativos.
+x <- rnorm(1)
+while (x <= 1) {
+  x <- rnorm(1)
+  if(x >= 0){
+  print(x)
+  } else {
+    next
+  }
+}
+
+#Adapte o script anterior para contar quantos números negativos não foram impressos
+count <- 0
+x <- rnorm(1)
+  while (x <= 1) {
+    x <- rnorm(1)
+    if(x >= 0){
+    j <- x
+    } else if (x < 0) {
+     count <- count +1
+     next
+    }
+  }
+ print(count)
