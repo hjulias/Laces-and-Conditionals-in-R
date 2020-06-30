@@ -1,0 +1,6 @@
+#Crie um script que imprime uma variável aleatória x <- rnorm(1) e que só termina quando x é maior que 1
+x <- rnorm(1)
+while (x <= 1) {
+  x <- rnorm(1)
+  print(x)
+}
